@@ -8,7 +8,7 @@
 </template>
 
 <style>
-.VueToNuxtLogo {
+/*.VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
   transform: rotateX(180deg);
@@ -75,5 +75,5 @@
   100% {
     left: 70px;
   }
-}
+}*/
 </style>
