@@ -18,6 +18,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#Ignore folder names node_modules
+node_modules/
+
 # =========================
 # Operating System Files
 # =========================
