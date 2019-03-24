@@ -52,5 +52,3 @@ export default {
 
 <style>
 </style>
-
-AAAAAAAAAAAAA

@@ -12,9 +12,7 @@
 </template>
 
 <style scoped>
-/*
-Flex container items inside main
-*/
+
 main {
   display: flex;
   flex-direction: column;
@@ -22,15 +20,18 @@ main {
   align-items: center;
   background-color: #638de8;
 }
+
 h1 {
   font-size: 7.5em;
   max-width: 60%;
   text-align: center;
   color: #d4f9f4;
 }
+
 .index__link {
   margin-top: 2.5rem;
 }
+
 .index__link a {
   text-transform: uppercase;
   font-weight: 600;
@@ -40,7 +41,9 @@ h1 {
   padding: 1.2rem;
   border-radius: 2rem;
 }
+
 </style>
+
 <script>
 export default {
     head() {
