@@ -1,55 +1,56 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="container">
+    <theheader :background-color="backgroundColor" />
+    <nuxt/>
+    <thefooter :background-color="backgroundColor" />
   </div>
 </template>
 
+<script>
+import theheader from '~/components/theheader.vue';
+import thefooter from '~/components/thefooter.vue';
+export default {
+    components: {
+        theheader,
+        thefooter,
+    },
+    data() {
+        return {
+            backgroundColor: '#fff',
+        };
+    },
+    watch: {
+        $route: 'routeChanged',
+    },
+    created() {
+        this.routeChanged();
+    },
+    methods: {
+        /* Solution from conditional logic issue:
+        https://github.com/nuxt/nuxt.js/issues/180
+        */
+        routeChanged() {
+            this.setBackgroundColor();
+        },
+
+        setBackgroundColor() {
+            const routePath = this.$route.path;
+            const pageRoot = 'my-music-';
+            const [, currentPage] = routePath.split(pageRoot);
+            const backgroundList = ['#638de8', '#ffc965', '#b79cc9'];
+            const isPage = [routePath === '/', currentPage === '1', currentPage === '2'];
+
+            isPage.forEach((isPageItem, index) => {
+                if (isPageItem) {
+                    this.backgroundColor = backgroundList[index];
+                }
+            });
+        },
+    },
+};
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
 </style>
+
+AAAAAAAAAAAAA

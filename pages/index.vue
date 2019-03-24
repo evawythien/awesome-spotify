@@ -1,68 +1,55 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        awesome-spotify
-      </h1>
-      <h2 class="subtitle">
-        My best Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
+  <main class="index">
+    <h1>
+      Tu música en resumen
+    </h1>
+    <div class="index__link">
+      <nuxt-link to="/music-1">
+        Conecta con Spotify
+      </nuxt-link>
     </div>
-  </section>
+  </main>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+<style scoped>
+/*
+Flex container items inside main
+*/
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #638de8;
+}
+h1 {
+  font-size: 7.5em;
+  max-width: 60%;
   text-align: center;
+  color: #d4f9f4;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.index__link {
+  margin-top: 2.5rem;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.index__link a {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #d4f9f4;
+  color: #638de8;
+  padding: 1.2rem;
+  border-radius: 2rem;
 }
 </style>
+<script>
+export default {
+    head() {
+        return {
+            title: 'Tu música en resumen',
+            meta: [
+                { hid: 'description', name: 'description', content: 'Descubre tus artistas y canciones favoritos en Wecodefy.' },
+            ],
+        };
+    },
+};
+</script>
