@@ -1,7 +1,7 @@
 <template>
   <main class="index">
     <h1>
-      Tu música en resumen
+      Tu música en resumen.
     </h1>
     <div class="index__link">
       <nuxt-link to="/music-1">
@@ -46,13 +46,13 @@ h1 {
 
 <script>
 export default {
-    head() {
-        return {
-            title: 'Tu música en resumen',
-            meta: [
-                { hid: 'description', name: 'description', content: 'Descubre tus artistas y canciones favoritos en Wecodefy.' },
-            ],
-        };
-    },
+  head() {
+    return {
+      title: 'Tu música en resumen',
+        meta: [       
+          { hid: 'description', name: 'description', content: 'Descubre tus artistas y canciones favoritos en Wecodefy.' },     
+      ],
+    };
+  },
 };
 </script>
