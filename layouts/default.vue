@@ -32,7 +32,7 @@ export default {
         },
         setBackgroundColor() {
             const routePath = this.$route.path;
-            const pageRoot = 'my-music-';
+            const pageRoot = 'music-';
             const [, currentPage] = routePath.split(pageRoot);
             const backgroundList = ['#638de8', '#ffc965', '#b79cc9'];
             const isPage = [routePath === '/', currentPage === '1', currentPage === '2'];

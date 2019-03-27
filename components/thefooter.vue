@@ -36,7 +36,7 @@ export default {
             isLastPage: false,
             previousPage: 0,
             nextPage: 0,
-            pageRoot: 'my-music-',
+            pageRoot: 'music-',
         };
     },
     computed: {
