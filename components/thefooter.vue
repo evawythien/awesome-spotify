@@ -10,10 +10,7 @@
       :total-pages="numberedPages"
     />
 
-    <link-next
-      :show="linksEnabled && !isLastPage"
-      :to="`${pageRoot}${nextPage}`"
-    />
+    <link-next :show="linksEnabled && !isLastPage" :to="`${pageRoot}${nextPage}`"/>
 
     <footer-nav />
   </footer>
@@ -54,9 +51,7 @@ export default {
         this.routeChanged();
     },
     methods: {
-        /* Solution from conditional logic issue:
-        https://github.com/nuxt/nuxt.js/issues/180
-        */
+      
         routeChanged() {
             const routePath = this.$route.path;
 
@@ -95,14 +90,15 @@ export default {
 </script>
 
 <style>
-     /* Container footer: links and nav */
      footer {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding: 0 2rem;
      }
+
      footer.footer--right {
           justify-content: flex-end;
      }
+     
 </style>

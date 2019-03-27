@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _7daa0856 = () => interopDefault(import('..\\pages\\music-1.vue' /* webpackChunkName: "pages_music-1" */))
+const _7db81fd7 = () => interopDefault(import('..\\pages\\music-2.vue' /* webpackChunkName: "pages_music-2" */))
 const _61e84f5f = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
@@ -79,6 +81,14 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/music-1",
+      component: _7daa0856,
+      name: "music-1"
+    }, {
+      path: "/music-2",
+      component: _7db81fd7,
+      name: "music-2"
+    }, {
       path: "/",
       component: _61e84f5f,
       name: "index"

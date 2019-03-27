@@ -1,20 +1,13 @@
 <template>
-  <div
-    v-if="show"
-    class="footer-link-number">
-    <nuxt-link
-      v-if="showPreviousPage"
-      :to="toPrevious"
-      class="arrow-up"/>
-    <span>{{ currentPage }} / {{ totalPages }}</span>
-    <nuxt-link
-      v-if="showNextPage"
-      :to="toNext"
-      class="arrow-down"/>
-  </div>
+    <div v-if="show" class="footer-link-number">
+        <nuxt-link v-if="showPreviousPage" :to="toPrevious" class="arrow-up"/>
+        <span>{{ currentPage }} / {{ totalPages }}</span>
+        <nuxt-link v-if="showNextPage" :to="toNext" class="arrow-down"/>
+    </div>
 </template>
 
 <script>
+
 export default {
     props: {
         show: {
