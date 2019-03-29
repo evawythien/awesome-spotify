@@ -1,7 +1,7 @@
 <template>
   <header :style="{ backgroundColor: backgroundColor }">
     <div class="logo">
-      <img src="~assets/images/logo.png" >
+      <img src="~assets/images/spotify-logo.svg" >
     </div>
   </header>
 </template>
