@@ -11,7 +11,6 @@
             <p>Artistas favoritos</p>
             <ul>
               <li v-for="artist in artists.items" :key="artist.name">
-                {{ artist.name }}
               </li>
             </ul>
           </div>
@@ -19,7 +18,6 @@
             <p>Canciones favoritas</p>
             <ul>
               <li v-for="track in tracks.items" :key="track.name">
-                {{ track.name }}
               </li>
             </ul>
           </div>

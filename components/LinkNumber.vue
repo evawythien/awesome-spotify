@@ -1,8 +1,8 @@
 <template>
     <div v-if="show" class="footer-link-number">
-        <nuxt-link v-if="showPreviousPage" :to="toPrevious" class="arrow-up"/>
+        <nuxt-link v-if="showPreviousPage" :to="toPrevious" class="fas fa-angle-up"/>
         <span>{{ currentPage }} / {{ totalPages }}</span>
-        <nuxt-link v-if="showNextPage" :to="toNext" class="arrow-down"/>
+        <nuxt-link v-if="showNextPage" :to="toNext" class="fas fa-angle-down"/>
     </div>
 </template>
 
@@ -41,14 +41,3 @@ export default {
     },
 };
 </script>
-
-<style>
-    .footer-link-number {        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-        align-self: flex-start;
-        margin-top: 1rem;
-    }
-</style>
