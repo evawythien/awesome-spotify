@@ -10,11 +10,13 @@ export async function setSpotifyAccessToken(token) {
         return token;
     }
     if (process.client) {
+
         const callbackUrl = window.location.href;
         const clientId = '978477836dd2404a9140f5a65ca803ca';
         const scope = 'user-top-read';
         const apiUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&scope=${scope}&response_type=token&redirect_uri=${callbackUrl}`;
         let hash;
+
         if (!window.location.hash) {
             window.location.replace(apiUrl);
         } else {
@@ -23,7 +25,9 @@ export async function setSpotifyAccessToken(token) {
             [hash] = hash.split('&');
             [, hash] = hash.split('=');
         }
+
         accessToken = hash;
+
         if (accessToken) {
             await spotifyApi.setAccessToken(accessToken);
         }
@@ -32,15 +36,13 @@ export async function setSpotifyAccessToken(token) {
 }
 
 function getArtistImage(artists) {
-    const {
-        items,
-    } = artists;
+
+    const { items } = artists;
     let topArtistImage = '';
+
     if (items && items.length > 0) {
         const firstItem = items[0];
-        const {
-            images,
-        } = firstItem;
+        const { images } = firstItem;
         if (images && images.length > 1) {
             // second image 320x320
             const firstImageUrl = images[1].url;
@@ -90,6 +92,7 @@ function mostFrequent(arr) {
 
     const i = values.findIndex(el => el === Math.max(...values));
     const mostFrequentWord = Object.entries(pairsObj)[i];
+
     return mostFrequentWord.length > 1 ? mostFrequent[0] : '';
 }
 
@@ -98,6 +101,7 @@ function getCapitalizeWord(word) {
 }
 
 export function getTopGenre(artists) {
+    
     let topGenre = '';
     if (artists && artists.items && artists.items.length > 0) {
         const genreList = artists.items.reduce(
