@@ -8,7 +8,7 @@
         <p>Tus artistas favoritos y las canciones más escuchadas el último mes.</p>
         <div class="my-music-1-section__artists-songs">
           <div class="my-music-1-section__list--artists">
-            <p>Artistas favoritos</p>
+            <p>ARTISTAS FAVORITOS</p>
             <ul>
               <li v-for="artist in artists.items" :key="artist.name">
                 <span class="fas fa-genderless"> {{ artist.name }} </span>
@@ -16,7 +16,7 @@
             </ul>
           </div>
           <div class="my-music-1-section__list--songs">
-            <p>Canciones favoritas</p>
+            <p>CANCIONES FAVORITAS</p>
             <ul>
               <li v-for="track in tracks.items" :key="track.name">
                 <span class="fas fa-genderless"> {{ track.name }} </span>

@@ -1,6 +1,6 @@
 /* Global styles */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
 }
@@ -12,7 +12,6 @@ html {
     margin: 0;
 }
 
-/* Layout container: header, main, footer */
 .container {
     display: flex;
     flex-direction: column;
@@ -21,19 +20,18 @@ html {
 
 /* Header */
 header {
-    background-color: aquamarine;
+    background-color: #d4f9f4;
     height: 7rem;
 }
 
-/* Main Item from container: get all space available */
 main {
     flex-grow: 1;
 }
 
 /* Footer */
 footer {
-    background-color: aqua;
-    height: 7rem;
+    background-color: #d4f9f4;
+    height: 7rem;  
 }
 
 .footer-link-next__link {
@@ -57,3 +55,31 @@ footer {
 .fa-angle-down, .fa-angle-up {
     text-decoration:none; 
 }
+
+
+/* NAV */
+
+nav {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 5px;
+}
+
+nav a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: #555;
+}
+  

@@ -3,12 +3,12 @@
     <div class="my-music-2__jacket">
       <div class="my-music-2__image-genre">
         <img :src="topArtistImage">
-        <div class="my-music-2__genre">
+      <!--  <div class="my-music-2__genre">
           <p class="my-music-2__header">Géneros favoritos</p>
           <ul>
             <li>{{ topGenre }}</li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <div class="my-music-2__artists-songs">
         <div class="my-music-2__artists">
@@ -32,12 +32,7 @@
       <h1>Comparte tu música</h1>
       <p class="my-music-2__share--description">
         Si llevas tiempo disfrutando de temazos, ¿por qué no lo compartes?
-      </p>
-      <p class="twitter-share-button">
-        <a target="_blank" href="share url" >
-          <!--<img src="~assets/images/twitter-icon.png">-->
-        </a>
-      </p>
+      </p>      
     </div>
   </main>
 </template>
@@ -68,7 +63,7 @@ main {
 }
 
 .my-music-2__image-genre img {
-    max-width: 200px;
+    max-width: 400px;
 }
 
 .my-music-2 ul {

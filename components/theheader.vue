@@ -25,6 +25,6 @@ header {
   align-items: center;
 }
 .logo {
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 </style>

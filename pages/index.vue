@@ -14,14 +14,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #638de8;
+    background-color: #E8A4D8;
   }
 
   h1 {
     font-size: 7.5em;
     max-width: 60%;
     text-align: center;
-    color: #d4f9f4;
+    color: #B6E8AA;
   }
 
   .index__link {
