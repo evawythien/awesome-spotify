@@ -1,8 +1,8 @@
 <template>
   <main class="index">
     <h1>Tu música en resumen.</h1>
-    <div class="index__link">
-      <nuxt-link to="/music-1">Conecta con Spotify</nuxt-link>
+    <div class="musicLink">
+      <nuxt-link to="/successlist">Conecta con Spotify</nuxt-link>
     </div>
   </main>
 </template>
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E8A4D8;
+    background-color: #fff;
   }
 
   h1 {
@@ -24,33 +24,19 @@
     color: #B6E8AA;
   }
 
-  .index__link {
+  .musicLink {
     margin-top: 2.5rem;
   }
 
-  .index__link a {
+  .musicLink a {
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
-    background-color: #d4f9f4;
-    color: #638de8;
-    padding: 1.2rem;
-    border-radius: 2rem;
+    background: rgba(182, 232, 227, 1);
+    color: #0a0a0a;
+    border: 1px solid #4e57ef;
+    box-shadow: 7px 7px 0px #4e57ef;
+    padding: 20px;
   }
 
 </style>
-
-<script>
-
-  export default {
-    head() {
-      return {
-        title: 'Tu música en resumen',
-          meta: [       
-            { hid: 'description', name: 'description', content: 'Descubre tus artistas y canciones favoritos en Wecodefy.' },     
-        ],
-      };
-    },
-  };
-  
-</script>

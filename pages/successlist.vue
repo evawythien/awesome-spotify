@@ -1,13 +1,13 @@
 <template>
-  <main class="my-music-1">
+  <main class="my-successlist">
     <h1>Listas de éxitos</h1>
-    <section class="my-music-1-section">
-      <img :src="topArtistImage" class="my-music-1-section__image">
-      <div class="my-music-1-section__list">
+    <section class="my-successlist-section">
+      <img :src="topArtistImage" class="my-successlist-section__image">
+      <div class="my-successlist-section__list">
         <p>Como tu playlist, ninguna.</p>
         <p>Tus artistas favoritos y las canciones más escuchadas el último mes.</p>
-        <div class="my-music-1-section__artists-songs">
-          <div class="my-music-1-section__list--artists">
+        <div class="my-successlist-section__artists-songs">
+          <div class="my-successlist-section__list--artists">
             <p>ARTISTAS FAVORITOS</p>
             <ul>
               <li v-for="artist in artists.items" :key="artist.name">
@@ -15,7 +15,7 @@
               </li>
             </ul>
           </div>
-          <div class="my-music-1-section__list--songs">
+          <div class="my-successlist-section__list--songs">
             <p>CANCIONES FAVORITAS</p>
             <ul>
               <li v-for="track in tracks.items" :key="track.name">
@@ -67,40 +67,40 @@ h1 {
     margin-top: 4rem;
 }
 
-.my-music-1-section {
+.my-successlist-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.my-music-1-section__image {
+.my-successlist-section__image {
     max-width: 300px;
 }
 
-.my-music-1-section__list {
+.my-successlist-section__list {
     margin-left: 2rem;
     font-size: 1.2em;
 }
 
-.my-music-1-section__list > p {
+.my-successlist-section__list > p {
     margin-bottom: 1rem;
 }
 
-.my-music-1-section__list ul {
+.my-successlist-section__list ul {
     padding: 0;
     list-style-type: none;
 }
 
-.my-music-1-section__artists-songs {
+.my-successlist-section__artists-songs {
     display: flex;
     justify-content: space-between;
 }
 
-.my-music-1-section__list--artists {
+.my-successlist-section__list--artists {
     margin-right: 2rem;
 }
 
-.my-music-1-section__list--artists p, .my-music-1-section__list--songs p {
+.my-successlist-section__list--artists p, .my-successlist-section__list--songs p {
     font-weight: 600;
     margin-bottom: 1rem;
 }

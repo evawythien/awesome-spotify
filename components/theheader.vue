@@ -1,7 +1,7 @@
 <template>
   <header :style="{ backgroundColor: backgroundColor }">
     <div class="logo">
-      <img src="~assets/images/spotify-logo.svg" >
+      <a href="/"><img  src="~assets/images/spotify-logo.svg" ></a>
     </div>
   </header>
 </template>
@@ -24,7 +24,13 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
+
 .logo {
   margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.logo img { 
+  width: 70px; 
 }
 </style>

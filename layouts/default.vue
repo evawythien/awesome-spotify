@@ -34,7 +34,7 @@ export default {
             const routePath = this.$route.path;
             const pageRoot = 'music-';
             const [, currentPage] = routePath.split(pageRoot);
-            const backgroundList = ['#638de8', '#ffc965', '#b79cc9'];
+            const backgroundList = ['#fff', '#fff', '#fff'];
             const isPage = [routePath === '/', currentPage === '1', currentPage === '2'];
 
             isPage.forEach((isPageItem, index) => 

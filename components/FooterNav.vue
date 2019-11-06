@@ -2,13 +2,12 @@
   <nav>
     <ul>
       <li>
-        <nuxt-link to="http://www.int-tense.com">Made with love ♥.</nuxt-link>
+        <a href="http://www.int-tense.com">Made with love ♥.</a>
       </li>    
     </ul>
   </nav>
 </template>
 
 <script>
-export default {
-};
+  export default {};
 </script>

@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _316000cc = () => interopDefault(import('..\\pages\\successList.vue' /* webpackChunkName: "pages_successList" */))
 const _3143d1ca = () => interopDefault(import('..\\pages\\music-2.vue' /* webpackChunkName: "pages_music-2" */))
+const _645807b2 = () => interopDefault(import('..\\pages\\successlist.vue' /* webpackChunkName: "pages_successlist" */))
 const _606b47a3 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
@@ -81,13 +81,13 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/successList",
-      component: _316000cc,
-      name: "successList"
-    }, {
       path: "/music-2",
       component: _3143d1ca,
       name: "music-2"
+    }, {
+      path: "/successlist",
+      component: _645807b2,
+      name: "successlist"
     }, {
       path: "/",
       component: _606b47a3,
