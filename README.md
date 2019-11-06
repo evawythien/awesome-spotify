@@ -1,6 +1,6 @@
-# Awesome Spotify.npm inst
+# Awesome Spotify.
 
-> My best Nuxt.js project
+> -
 
 ## Build Setup
 
@@ -11,3 +11,6 @@ $ npm install
 # Run application.
 $ npm run dev
 
+## Go!
+
+> Visit: int-tense.com
