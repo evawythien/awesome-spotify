@@ -18,15 +18,15 @@
 
 <script>
 
-import LinkNumber from '~/components/LinkNumber.vue';
-import LinkNext from '~/components/LinkNext.vue';
-import FooterNav from '~/components/FooterNav.vue';
+import menunumber from '~/components/menunumber.vue';
+import linkmenu from '~/components/linkmenu.vue';
+import footernavigation from '~/components/footernavigation.vue';
 
 export default {
     components: {
-        LinkNumber,
-        LinkNext,
-        FooterNav,
+        menunumber,
+        linkmenu,
+        footernavigation,
     },
     data() {
         return {
